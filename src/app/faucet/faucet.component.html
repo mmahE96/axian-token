@@ -1,5 +1,20 @@
 <div>
     <h3>Axian faucet</h3>
+    <p>Pyer: {{payer}}</p>
+    <p>MintAuthority: {{mintAuthority}}</p>
+    <p>FreezeAuthority: {{freezeAuthority}}</p>
     <p>Get 1000 AXI tokens!</p>
-    <button>Get 1000 AXI</button>
+    <p>Response: {{mintResponse}}</p>
+    <button (click)="mintAxiTokens()">Get 1000 AXI</button>
+    <p>Connection established: {{connection}}</p>
+    <button (click)="airdropSolToPayerForMinting()">AirDrop SOL to Payer</button>
+
+    <button (click)="getSupplyInfoForNewToken()" >Get Supply Info</button>
+
+    <button (click)="createNewAccountForStoringAXItokens()">Create new account</button>
+    <button (click)="checkTokenAccountInfo()">Check Account Info</button>
+    <button (click)="mintTokens()">Mint tokens</button>
+  
+
+   
 </div>
