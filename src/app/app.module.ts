@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { LogoComponent } from './logo/logo.component';
@@ -16,7 +17,8 @@ import { TransferTokensComponent } from './transfer-tokens/transfer-tokens.compo
     TransferTokensComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

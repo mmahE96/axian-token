@@ -26,7 +26,7 @@ export class FaucetComponent implements OnInit {
   tokenAccount!:any;
 
   //utils
-  mintResponse: any;
+  
 
   connection: Connection;
   constructor() {
@@ -67,7 +67,7 @@ export class FaucetComponent implements OnInit {
       9 // We are using 9 to match the CLI decimal default exactly
     );
     this.axianMint = mint;
-    this.mintResponse = mint;
+    
     console.log(mint.toBase58());
     // HHEQWRm5hgppQPGcCufGHPhEGscpsSEfVvmVr59AnVxZ token Address
   }

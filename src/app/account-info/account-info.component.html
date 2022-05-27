@@ -1,6 +1,13 @@
 <div>
     <h3>Check balance of your account</h3>
     <p>Check balance of AXI tokens on your account</p>
-    <button>Check balance</button>
+
+    <form #accountForm="ngForm" (ngSubmit)="submitForm(accountForm)">
+        <label>Enter address of your account</label>
+        <input ngModel name="accountAddress"  />
+        <button type="submit">Check Account Info</button>
+    </form>
+
+    
 
 </div>
